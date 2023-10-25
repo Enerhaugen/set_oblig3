@@ -4,7 +4,7 @@
 I denne oppgaven så begynte jeg med å lage en yml fil ved å følge instruksjonene på denne nettsiden: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
 
 
-Instruksjonene her forteller deg hvordan du kan lage en yml fil ved å bruke en ferdigstilt mal for java og maven. Denne vil automatisk kjøre testene når man pusher endringer inn i repositoryet. 
+Instruksjonene her forteller deg hvordan du kan lage en yml fil ved å bruke en ferdigstilt mal for java og maven. Denne vil kjøre når man pusher endringer inn i repositoryet. 
 
 
 Når jeg først la til denne yml filen fikk jeg med en gang noen feilemeldinger om at yml filen ikke fant pom.xml filen. jeg gjorde derfor endringer til yml filen slik at run: under build build with maven pekte på selve filepathen til pom.xml filen: - name: Build with Maven
