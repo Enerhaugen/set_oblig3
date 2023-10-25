@@ -1,7 +1,13 @@
 # set_oblig3
+
+
 I denne oppgaven så begynte jeg med å lage en yml fil ved å følge instruksjonene på denne nettsiden: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
+
+
 Instruksjonene her forteller deg hvordan du kan lage en yml fil ved å bruke en ferdigstilt mal for java og maven. Denne vil automatisk kjøre testene når man pusher endringer inn i repositoryet. 
-Når jeg først la til denne yml filen fikk jeg med en gang noen feilemeldinger om at yml filen ikke fant om.xml filen. jeg gjorde derfor endringer til yml filen slik at run: under build build with maven pekte på selve filepathen til pom.xml filen: - name: Build with Maven
+
+
+Når jeg først la til denne yml filen fikk jeg med en gang noen feilemeldinger om at yml filen ikke fant pom.xml filen. jeg gjorde derfor endringer til yml filen slik at run: under build build with maven pekte på selve filepathen til pom.xml filen: - name: Build with Maven
       run: mvn -B package --file SET_Oblig_2_Robin_Enerhaugen/SET_Oblig_2/pom.xml
 
 Jeg måtte deretter fjerne optional: update dependency graph ettersom dette forårsakte en feilmelding jeg ikke fikk rettet opp i uten og fjerne den. 
