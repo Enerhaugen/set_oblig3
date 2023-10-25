@@ -7,7 +7,7 @@ public class LeapYearTest {
     @Test
     void isYearALeapYear(){
 
-        assertFalse(leapYear.isLeapYear(1600));
+        assertTrue(leapYear.isLeapYear(1600));
         assertTrue(leapYear.isLeapYear(2000));
         assertTrue(leapYear.isLeapYear(2400));
         assertTrue(leapYear.isLeapYear(2800));
