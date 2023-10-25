@@ -31,6 +31,6 @@ jobs:
       run: mvn -B package --file SET_Oblig_2_Robin_Enerhaugen/SET_Oblig_2/pom.xml
 
     - name: Run Test
-      run: mvn SET_Oblig_2_Robin_Enerhaugen/SET_Oblig_2/src/test/java
+      run: mvn test --file SET_Oblig_2_Robin_Enerhaugen/SET_Oblig_2/pom.xml
 
   
