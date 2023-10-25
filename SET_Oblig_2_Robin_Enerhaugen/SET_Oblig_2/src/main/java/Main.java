@@ -16,6 +16,7 @@ public class Main {
         System.out.println(leapYear.isLeapYear(1800));
         System.out.println(leapYear.isLeapYear(1900));
         System.out.println(leapYear.isLeapYear(2100));
+        //testing oblig3 that the CI runs with a new commit
     }
 
 }
